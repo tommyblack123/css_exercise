@@ -1,23 +1,21 @@
 <script setup lang='ts'>
 import { ref, reactive, onMounted } from 'vue';
+
+
 </script>
 
 <template>
   <div>
-
-    <h1>
-      我的h1
-    </h1>
+    <p>
+      段落
+    </p>
 
   </div>
 </template>
 
 
-<style>
-
-h1{
-  color: blue;
-}
+<style scoped>
+@import './style/my.css'
 
 </style>
 
