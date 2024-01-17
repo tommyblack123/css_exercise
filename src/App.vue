@@ -1,21 +1,20 @@
 <script setup lang='ts'>
 import { ref, reactive, onMounted } from 'vue';
 
+import sub1 from './components/盒子模型.vue'
+
 
 </script>
 
 <template>
-  <div>
-    <p>
-      段落
-    </p>
 
-  </div>
+<sub1></sub1>
+
 </template>
 
 
 <style scoped>
-@import './style/my.css'
+
 
 </style>
 
