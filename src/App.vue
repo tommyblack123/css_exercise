@@ -1,7 +1,8 @@
 <script setup lang='ts'>
 import { ref, reactive, onMounted } from 'vue';
 
-import sub1 from './components/盒子模型.vue'
+import sub1 from './components/商场.vue'
+
 
 </script>
 
@@ -10,10 +11,18 @@ import sub1 from './components/盒子模型.vue'
 </template>
 
 <style scoped lang='scss'>
-*{
-    margin: 0;
-    padding: 0;
+
+</style>
+
+
+<style>
+html{
+    overflow: hidden !important;
 }
 
-
+body{
+    width: 720px;
+    max-width: 720px;
+    margin: 0 auto !important;
+}
 </style>

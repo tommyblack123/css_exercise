@@ -5,6 +5,8 @@ import { ref, reactive, onMounted } from 'vue';
 <template>
     <div class="contanier">
 
+        <p>123</p>
+
     </div>
 </template>
 
@@ -16,7 +18,14 @@ import { ref, reactive, onMounted } from 'vue';
 .contanier{
     width: 100px;
     height: 100px;
+    padding: 10px;
     background-color: skyblue;
+    background-clip: content-box;
+    border: 1px dotted;
+
+    p{
+        width: 100px;
+    }
 }
 
 </style>
