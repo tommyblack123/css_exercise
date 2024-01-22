@@ -17,7 +17,7 @@ import sub1 from './components/商场.vue'
 
 <style>
 html{
-    overflow: hidden !important;
+    overflow-x: hidden !important;
 }
 
 body{
