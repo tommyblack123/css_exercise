@@ -1,5 +1,14 @@
 <script setup lang='ts'>
 
+import { ref,reactive } from 'vue';
+
+    const clicka = ()=>{
+        SvgColor.value = 'red';
+    }
+
+    const SvgColor = ref<string>('');
+
+
 </script>
     
     
@@ -139,15 +148,54 @@
                 </div>
             </div>
         </section>
-        <footer></footer>
+        <footer>
+        <div class="footer">
+            <ul>
+                <li>
+                    <a @click="clicka">
+                        <SvgIcon name="home" width="20px" height="20px" :color="SvgColor"></SvgIcon>
+                        <span>首页</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <SvgIcon name="home" width="20px" height="20px"></SvgIcon>
+                        <span>首页</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <SvgIcon name="9dot9baoyou" width="20px" height="20px"></SvgIcon>
+                        <span>首页</span>
+                    </a>
+                </li>
+                <li>
+                    <a >
+                        <SvgIcon name="home" width="20px" height="20px"></SvgIcon>
+                        <span>首页</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </footer>
     </div>
 </template>
     
     
 <style scoped>
+
+a{
+    color: #333;
+}
+
+a:focus, a:active{
+  color: red;
+}
+
 section {
     padding: 20px;
     background-color: pink;
+    overflow-y:auto;
 }
 
 
@@ -273,12 +321,12 @@ p[bgp] {
     padding: 4px;
 }
 
-
 .container {
     display: flex;
     flex-direction: column;
     width: 100%;
     max-width: 720px;
+    height: 100vh;
 }
 
 .search {
@@ -298,6 +346,29 @@ p[bgp] {
     border: none;
     margin: 0 10px;
 }
+
+.footer ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30px;
+}
+
+
+.footer ul li{
+    flex: 1;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.footer ul li span{
+    display: block;
+}
+
+.footer ul li a{
+    text-decoration: none;
+}
+
 </style>
 
 

@@ -1,7 +1,7 @@
 <script setup lang='ts'>
 import { ref, reactive, onMounted } from 'vue';
 
-import sub1 from './components/商场.vue'
+import sub1 from './components/grid.vue'
 
 
 </script>
@@ -16,13 +16,16 @@ import sub1 from './components/商场.vue'
 
 
 <style>
+
+body,
 html{
-    overflow-x: hidden !important;
+    width: 100% !important;
+    height: 100% !important;
+    font-size: 62.5% !important;
+    /* overflow-x: hidden !important; */
 }
 
 body{
-    width: 720px;
-    max-width: 720px;
-    margin: 0 auto !important;
+    color: #777 !important;
 }
 </style>
