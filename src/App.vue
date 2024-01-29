@@ -1,7 +1,7 @@
 <script setup lang='ts'>
 import { ref, reactive, onMounted } from 'vue';
 
-import sub1 from './components/grid.vue'
+import sub1 from './components/meizu.vue'
 
 
 </script>
