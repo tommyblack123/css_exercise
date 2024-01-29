@@ -124,4 +124,18 @@ const  goodslist = ref<Array<goodsitem>>([
     width: 1240px;
     display: flex;
 }
+.ad .wrap .box{
+    flex: 1;
+    height: 277px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.ad .wrap .box .goods-img{
+    width: 130px;
+    height: 130px;
+}
+
 </style>
