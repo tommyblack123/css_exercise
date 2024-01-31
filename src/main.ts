@@ -7,8 +7,9 @@ import 'element-plus/dist/index.css'
 //svg插件需要配置代码
 import 'virtual:svg-icons-register'
 import gloalComponent from './components'
+
 import zhCn from 'element-plus/dist/locale/zh-cn.mjs'
-import 'reset.css'
+import './style/reset.scss'
 
 const app = createApp(App);
 app.use(gloalComponent);
